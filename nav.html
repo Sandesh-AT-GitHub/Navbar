@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="nav.css"> <!-- link to external css -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">  <!-- link to fontawesome library for usage of icons in the pages -->
+</head>
+<body>
+    <!-- start of navigation body -->
+    <div class="nav-body">
+
+        <span class="opennav-btn" id="opennav-btn"><i class="fa fa-bars" aria-hidden="true" id="opennav"></i></span>   <!-- button to open list of links in mobile view -->
+        <span class="closenav-btn" id="closenav-btn"><i class="fa fa-times" aria-hidden="true" id="closenav"></i></span>    <!-- button to close list of links in mobile view -->
+
+         <!-- logo -->
+        <span class="nav-logo"><h1>LOGO</h1></span>
+        
+        <!-- start of list of links -->
+        <div class="nav-link" id="nav-link">
+            <a href="#" class="active">LINK1</a>  <!-- active link for home -->
+            <a href="#">LINK2</a>
+            <a href="#">LINK3</a>
+            <a href="#">LINK4</a>
+        </div>
+        <!-- end of list of links -->
+        
+        <!-- button to open search bar in mobile view -->
+        <span class="opensearch-btn" id="opensearch-btn"><i class="fa fa-search" aria-hidden="true" id="opensearch"></i></span>
+        <!-- button to close search bar in mobile view -->
+        <span class="closesearch-btn" id="closesearch-btn"><i class="fa fa-times" aria-hidden="true" id="closesearch"></i></span>
+        <!-- start of search bar -->
+        <form class="nav-search" id="nav-search">
+            <input type="text" class="search-input" placeholder="Enter to search" required>
+            <button type="submit" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <form>
+        <!-- end of search bar -->    
+
+    </div>
+    <!-- end of navigation body -->
+
+    <script src="nav.js"></script>
+</body>
+</html>
+
+<!--
+    IMPORTANT NOTE:
+    * some times the buttons will appears as we move from mobile view to desktop view. So refresh the webpage when it happens. 
+-->
